@@ -1,0 +1,22 @@
+{
+  "name": "poc-2fa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "./node_modules/.bin/node-pg-migrate up"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-pg-migrate": "^2.14.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "pg": "^7.4.0",
+    "qrcode": "^1.2.0",
+    "simple-pg": "^1.0.0",
+    "speakeasy": "^2.0.0"
+  }
+}

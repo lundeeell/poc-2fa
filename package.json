@@ -5,18 +5,29 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate": "./node_modules/.bin/node-pg-migrate up"
+    "checkdb": "./bin/checkDB.js",
+    "migrate": "./bin/migrate.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "node-pg-migrate": "^2.14.0",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "pg": "^7.4.0",
+    "pg-promise": "^7.3.2",
     "qrcode": "^1.2.0",
+    "randomatic": "^3.0.0",
     "simple-pg": "^1.0.0",
-    "speakeasy": "^2.0.0"
+    "speakeasy": "^2.0.0",
+    "twilio": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.7"
   }
 }
